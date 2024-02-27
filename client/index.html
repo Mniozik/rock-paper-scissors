@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="icon" href="./items/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./client.js"></script>
+</head>
+
+<body class="body">
+    <h1 style="text-align: center; background-color: darkseagreen; border: 3px solid">Rock-Paper-Scissors</h2>
+        <div id="initial">
+            <div id="canvas" class="canvas">
+                <canvas id="gameCanvas"></canvas>
+            </div>
+            <br>
+            <div class="initialButtons">
+                <button class="buttonCreateJoinGame" onclick="createGameSetup()">Create Game</button>
+                or
+                <input class="textJoinGame" type="text" name="" id="roomUniqueID">
+                <button class="buttonCreateJoinGame" onclick="joinGame()">Join Game</button>
+
+                <div id="joinGameInfo">
+                    <p id="fullRoom" class="errorJoin"> Room is already full.</p>
+                    <p id="notExistRoom" class="errorJoin"> Room with this ID not exist.</p>
+                </div>
+            </div>
+        </div>
+        <div id="gameSetup" style="display: none;" class="gameSetup">
+            <form id="myForm">
+                <p class="howManyRounds">How many rounds?</p>
+                <input type="radio" id="one" name="roundAmount" value="1">
+                <label for="one">1</label><br>
+                <input type="radio" id="three" name="roundAmount" value="3">
+                <label for="cssthree">3</label><br>
+                <input type="radio" id="ten" name="roundAmount" value="10">
+                <label for="ten">10</label><br>
+                <input class="buttonCreateGame2" type="button" value="Create" onclick="createGame()"
+                    id="buttonCreateGame2">
+            </form>
+            <p id="roundAmountEmpty" class="errorJoin">Choose amount of rounds.</p>
+        </div>
+        <div id="waitingArea" class="waitingArea" style="display: none;">
+        </div>
+        <div id="gameArea" class="gameArea" style="display: none;">
+            <div id="player1Choice" class="player1Choice">
+                <button class="rock" onclick="sendChoice(1)">Rock</button>
+                <button class="paper" onclick="sendChoice(2)">Paper</button>
+                <button class="scissors" onclick="sendChoice(3)">Scissors</button>
+            </div>
+            <div id="ResultRestart" style="display: none;">
+                <div id="resultArea"></div>
+                <div id="restartGame">
+                    <button id="restartButton" onclick="restartGame()" style="display: none;">Restart Game</button>
+                    <p id="restartRoom1" style="display: none; color: rgb(255, 157, 0);">Waiting for opponent to
+                        accept
+                        restart...</p>
+                    <p id="restartRoom2" style="display: none; color: rgb(0, 13, 255);">Opponent want's to play
+                        again!
+                    </p>
+                </div>
+            </div>
+            <div id="player2Choice" class="player2Choice">
+                <p id="opponentBefore" style="display: none; color: orange;">Waiting for opponent choice...
+                    <br><br><span style="font-size: 54px;">&#129393</span>
+                </p>
+                <p id="opponentAfter" style="display: none; color: green ;">Opponent made a choice! <br><br><span
+                        style="font-size: 54px;">&#128562</span></p>
+                <br>
+                <div id="opponentButtonPlace">
+
+                </div>
+            </div>
+        </div>
+        <div id="winnerPlace">
+            <div id="winnerArea">
+                <p id="ScoreInfo">Scoreboard</p>
+                <div id="scoreBoard">
+                    <p id="player1Score">You: 0</p>
+                    <p id="player2Score">Opponent: 0</p>
+                </div>
+            </div>
+            <div id="WinnerRestart">
+                <p id="scoreBoardMain" style="font-weight: bolder;"></p>
+                <!-- <button id="MenuButton" onclick="location.reload()" style="display: none;">Main Menu</button> -->
+                <button id="MenuButton" onclick="location.reload()">Main Menu</button>
+            </div>
+        </div>
+
+        <script src="./canvas.js"></script>
+</body>
+
+</html>
