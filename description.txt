@@ -1,0 +1,6 @@
+Na przykładzie 1 strony gdzie tworzymy gre.
+
+jak ktoś uruchamia stronę to wyświelta mu się strona html. Ma na niej przycisk Create Game (zdefiniowany w html), po którego kliknięciu następuje wywołanie funkcji createGame(). Kod html jest powiązany z client.js, w którym jest ta funkcja zdefiniowana. Ona wysyła komunikat 'createGame' do serwera index.js. 
+Serwer otrzymuje to i tworzy pokój i zwraca info 'newGame'.
+Client.js otrzymuje to i wie, ze pokój został poprawnie utworzony. 
+Zmienia okno w html. Tworzy przycisk. 
