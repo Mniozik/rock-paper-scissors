@@ -1,0 +1,15 @@
+Pierwszy projekt dotyczy wykorzystania technologii WebSocket do asynchronicznej komunikacji. Zakres funkcjonalny projektu jest dowolny. Ważne jest, aby w projekcie wystąpiły następujące elementy:
+
+		Kooperacja klientów – w przetwarzaniu jednocześnie musi uczestniczyć co najmniej 2 klientów, współpracujących ze sobą w sposób wymagający synchronizacji ich pracy przez serwer. Przykładem tego typu aplikacji mogą być różnego rodzaju gry.
+
+		Serwer powinien być w stanie jednocześnie obsługiwać kilka równoległych gier.
+
+    Należy zwrócić uwagę na optymalizację działania aplikacji, zarówno jeśli chodzi o obciążenie klienta jak i serwera (busy waiting), jak i ilość przesyłanych komunikatów (pooling).
+
+    Implementacja powinna być odporna na odświeżanie strony w przeglądarce; nie powinien być tracony stan gry.
+
+    Transfer danych pomiędzy serwerem a klientami ma się odbywać z wykorzystaniem binarnych komunikatów WebSocket.
+
+    Do prezentacji należy zastosować element <canvas>.
+
+		Implementacja powinna działać poprawnie w przeglądarkach: Firefox, Chrome i Opera.
