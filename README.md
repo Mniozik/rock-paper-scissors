@@ -6,26 +6,26 @@ This project is a web-based implementation of the classic game Rock-Paper-Scisso
 
 ## Features
 
-### WebSocket Communication
+### * WebSocket Communication
 
 Utilizes WebSocket protocol for real-time bidirectional communication between clients and server.
 
-### Multiplayer Support
+### * Multiplayer Support
 
 Enables cooperation between at least 2 players, ensuring synchronized gameplay through the server.
 
-### Optimization
+### * Optimization
 
 Focuses on optimizing both client and server performance, minimizing resource usage and the number of transmitted messages.
 
-### Binary Message Transfer
+### * Binary Message Transfer
 
 Utilizes binary WebSocket messages for efficient data transfer between server and clients.
 
-### Canvas Rendering
+### * Canvas Rendering
 
 Implements game visualization using the canvas element.
 
-### Browser Compatibility
+### * Browser Compatibility
 
 Compatible with modern web browsers including Firefox, Chrome
