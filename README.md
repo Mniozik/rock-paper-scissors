@@ -8,7 +8,7 @@ This project is a web-based implementation of the classic game Rock-Paper-Scisso
 
 * WebSocket Communication
 
-  Utilizes WebSocket protocol for real-time bidirectional communication between clients and server.
+    Utilizes WebSocket protocol for real-time bidirectional communication between clients and server.
 
 * Multiplayer Support
   Enables cooperation between at least 2 players, ensuring synchronized gameplay through the server.
