@@ -16,4 +16,4 @@ This project is a web-based implementation of the classic game Rock-Paper-Scisso
 
 * `Canvas Rendering` - Implements the part of game visualization using the canvas element.
 
-* `Browser Compatibility` - Compatible with modern web browsers including Firefox, Chrome
+* `Browser Compatibility` - Compatible with modern web browsers including Firefox, Chrome etc.
