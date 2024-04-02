@@ -1,8 +1,8 @@
-# Rock-Paper-Scissors WebGame
+# Rock-Paper-Scissors - WebGame 
 
 ## Description
 
-This project is a web-based implementation of the classic game Rock-Paper-Scissors, utilizing WebSocket technology and built with node.js. It allows for asynchronous communication between multiple clients and a server. The server is capable of handling multiple simultaneous games and ensures synchronization of client actions.
+This project is a web-based implementation of the classic game Rock-Paper-Scissors, utilizing `WebSocket` technology and built with `node.js`. It allows for asynchronous communication between multiple clients and a server. The server is capable of handling multiple simultaneous games and ensures synchronization of client actions.
 
 ## Features
 
