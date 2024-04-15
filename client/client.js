@@ -2,8 +2,9 @@ console.log("Start: client.js");
 
 // ---- Localhost or WebPage? 
 const socket = new WebSocket("ws://localhost:5000");  
-// const socket = new WebSocket("wss://7d2f-85-221-132-196.ngrok-free.app"); 
-// ngrok http 5000
+
+// const socket = new WebSocket("wss://9651-85-221-130-220.ngrok-free.app"); 
+// // ngrok http 5000
 
 socket.binaryType = 'arraybuffer'; 
 
