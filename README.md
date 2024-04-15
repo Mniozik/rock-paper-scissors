@@ -20,9 +20,14 @@ This project is a web-based implementation of the classic game Rock-Paper-Scisso
 * `Browser Compatibility` - Compatible with modern web browsers including Firefox, Chrome etc.
 
 ## How the game looks like
-* Menu
+### 1. Menu
+
 ![menu_1](./assets/1.png)
-* Gameplay
+
+### 2. Gameplay
+
 ![gameplay_2](./assets/2.png)
+---
 ![gameplay_3](./assets/3.png)
+---
 ![gameplay_4](./assets/4.png)
