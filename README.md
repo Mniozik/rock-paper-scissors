@@ -19,6 +19,17 @@ This project is a web-based implementation of the classic game Rock-Paper-Scisso
 
 * `Browser Compatibility` - Compatible with modern web browsers including Firefox, Chrome etc.
 
+## Preparation
+
+* **setup**:
+    ```bash
+    npm install
+    ```
+* **run**:
+    ```bash
+    node index.js
+    ```
+
 ## How the game looks like
 ### 1. Menu
 
